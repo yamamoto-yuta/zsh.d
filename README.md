@@ -5,7 +5,7 @@ zsh の設定を管理するためのリポジトリ
 ## インストール
 
 ```
-$ git clone <REPO> ~/.zsh.d
+$ git clone git@github.com:yamamoto-yuta/zsh.d.git ~/.zsh.d
 $ cat ~/.zsh.d/install >> ~/.zshrc
 ```
 
