@@ -17,6 +17,10 @@ alias dps='docker ps'
 # requirements: ls-Improved
 alias clear='clear && lsi ././'
 
+# Fuzzy-Explorer-on-Terminal
+# requirements: Fuzzy-Explorer-on-Terminal
+alias fet='. ~/.fet/fet'
+
 # For wsl
 # requirements: Files.exe
 alias hwclk='sudo hwclock -s'
