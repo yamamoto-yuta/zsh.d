@@ -3,6 +3,7 @@ alias relogin='exec $SHELL -l'
 alias alias-update='unalias -a && source ~/.zshrc'
 
 # Git
+alias br-clean='git branch --merged | egrep -v "\*|master|develop" | xargs git branch -D'
 # requirements: GitHub CLI
 alias repo='gh repo view --web'
 
