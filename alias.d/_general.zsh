@@ -2,6 +2,11 @@
 alias relogin='exec $SHELL -l'
 alias alias-update='unalias -a && source ~/.zshrc'
 
+# Python
+alias venv='python3 -m venv env'
+alias activate='source env/bin/activate'
+alias del-env='sudo rm -r ./env/'
+
 # Git
 alias br-clean='git branch --merged | egrep -v "\*|master|develop" | xargs git branch -D'
 # requirements: GitHub CLI
