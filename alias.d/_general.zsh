@@ -9,6 +9,7 @@ alias del-env='sudo rm -r ./env/'
 
 # Git
 alias br-clean='git branch --merged | egrep -v "\*|master|develop" | xargs git branch -D'
+alias push-this='git push origin  $(git branch --contains | cut -d " " -f 2)'
 # requirements: GitHub CLI
 alias repo='gh repo view --web'
 
