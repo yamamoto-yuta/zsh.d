@@ -1,4 +1,4 @@
-# Genera;
+# General
 alias relogin='exec $SHELL -l'
 alias alias-update='unalias -a && source ~/.zshrc'
 
