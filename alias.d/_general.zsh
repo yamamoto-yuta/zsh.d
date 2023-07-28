@@ -33,6 +33,8 @@ alias fet='. ~/.fet/fet'
 
 # For wsl
 # requirements: Files.exe
-alias hwclk='sudo hwclock -s'
-alias explorer='explorer.exe .'
-alias clip='clip.exe'
+if [[ $(uname -a) == *"WSL"* ]]; then
+  alias hwclk='sudo hwclock -s'
+  alias explorer='explorer.exe .'
+  alias clip='clip.exe'
+fi
