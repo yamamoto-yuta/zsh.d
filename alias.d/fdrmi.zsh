@@ -12,7 +12,11 @@ function function_fdrmi() {
     read answer
     if [ "$answer" = "y" -o "$answer" = "Y" ]; then
       # Delete selected images
-      local lst_image_id=$(echo "$selected" | sed 's/\s\{2,\}/\t/g' | cut -f 3)
+      if [ "$(uname -s)" = 'Darwin' ]; then
+        local lst_image_id=$(echo "$selected" | sed 's/[[:space:]]\{2,\}/\'$'\t/g' | cut -f 3)
+      else
+        local lst_image_id=$(echo "$selected" | sed 's/\s\{2,\}/\t/g' | cut -f 3)
+      fi
       local n_images=$(echo $lst_image_id | wc -l)
       for ((i=1; i<=$n_images; i++))
       do
