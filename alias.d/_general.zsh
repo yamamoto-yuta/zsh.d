@@ -1,6 +1,6 @@
 # General
 alias relogin='exec $SHELL -l'
-alias alias-update='unalias -a && source ~/.zshrc'
+alias reload-alias='unalias -a && source ~/.zshrc'
 alias update-zshd='cd ~/.zsh.d && git pull origin main && cd -'
 
 # Python
