@@ -16,6 +16,9 @@ alias fbr='git checkout $(git branch | cut -c 3- | fzf)'
 # requirements: GitHub CLI
 alias repo='gh repo view --web'
 
+# dbt
+alias dbt-target='cat $(dbt debug --config-dir | grep "open" | cut -d" " -f2)/profiles.yml | grep "target: "'
+
 # Docker
 # requirements: docker
 alias d='docker'
