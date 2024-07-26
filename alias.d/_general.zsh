@@ -22,7 +22,7 @@ alias dbt-target='cat $(dbt debug --config-dir | grep "open" | cut -d" " -f2)/pr
 # Docker
 # requirements: docker
 alias d='docker'
-alias dc='docker-compose'
+alias dc='docker compose'
 alias di='docker images'
 alias dps='docker ps'
 
