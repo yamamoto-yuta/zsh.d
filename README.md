@@ -4,6 +4,14 @@ zsh の設定を管理するためのリポジトリ
 
 ## インストール
 
+1. [fzf](https://github.com/junegunn/fzf)をインストール
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
+2. 次のコマンドを実行
+
 ```
 $ git clone git@github.com:yamamoto-yuta/zsh.d.git ~/.zsh.d
 $ cat ~/.zsh.d/install >> ~/.zshrc
